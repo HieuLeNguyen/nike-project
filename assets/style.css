@@ -1,0 +1,768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.td-under {text-decoration: underline;}
+
+.c-757575 {color: #757575;}
+.c-fff {color: #fff !important;}
+.c-000 {color: #000 !important;}
+
+.pb-32 {padding-bottom: 32px;}
+
+.fl-left {float: left;}
+
+.tt-upp {text-transform: uppercase;}
+
+.dl-fl-cTer {
+    display: flex;
+    justify-content: center;
+} 
+
+header {
+    max-height: 96px;
+    width: 100%;
+}
+
+.pre-l-brand-header {
+    width: 100%;
+    height: 36px;
+    background-color: whitesmoke;
+    padding: 0 38px 0 36px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pre-l-logoJdan img {
+    width: 24px;
+    height: 24px;
+    mix-blend-mode: darken;
+}
+
+.pre-l-logoJdan img:hover,
+.pre-logoNike img:hover
+{
+    opacity: 0.4;
+}
+
+
+.pre-l-userMenu {
+
+}
+
+.pre-l-userMenu ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.pre-l-userMenu ul li {
+
+}
+
+.pre-l-userMenu ul a {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+.pre-l-userMenu ul a:hover {
+    color: #757575;
+}
+
+.pre-l-userMenu ul li span {
+    font-size: 12px;
+    padding: 0 8px;
+}
+
+
+.pre-l-nav {
+    position: relative;
+    /* position: fixed; */
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    padding: 0 38px 0 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.4px;
+}
+
+.pre-logoNike {
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+
+.pre-logoNike img {
+    width: auto;
+    height: 60px;
+}
+
+.pre-desktop-menu {
+
+}
+
+.pre-l-nav .hide {
+    display: none;
+}
+
+/* .pre-l-nav .positionFix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
+div.pre-desktop-menu ul {
+    list-style-type: none;
+    padding: 2px;
+    margin: 0;
+}
+
+.pre-desktop-menu ul li:not(.item ul li) {
+    padding: 12px;
+    border-bottom: 2px solid #fff;
+}
+
+.pre-desktop-menu ul li:hover .subMenu {
+    display: block;
+    animation: subMenu  ease .5s;
+
+}
+
+.pre-desktop-menu ul li:hover:not(.item ul li) {
+    border-bottom: 2px solid #000;
+}
+
+.pre-desktop-menu ul li a:not(.item li a) {
+    text-decoration: none;
+    color: #111;
+
+}
+
+.pre-right-header {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pre-btn-search {
+    position: relative;
+}
+
+.pre-btn-search .iconSearch{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    font-size: 16px;
+    padding: 6px 8px;
+    border-radius: 50%;
+    border: none;
+}
+
+.pre-btn-search .iconSearch:hover,
+.pre-right-header .pre-btn-search .btn-search:hover {
+    background: #e7e7e7;
+}
+
+
+.pre-right-header .pre-btn-search .btn-search {
+    padding: 8px 48px;
+    width: 180px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 28px;
+    outline: none;
+    border: none;
+    margin-right: 8px;
+}
+
+.btn-ico-love-header
+{
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    margin: 0 12px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-icon-bag-header {
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-icon-bag-header:hover,
+.btn-ico-love-header:hover {
+    background: #e5e5e5;
+    border-radius: 50%;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 14px 32px 48px;
+    z-index: 10;
+}
+
+.pre-desktop-men ul li.subMenu:hover {
+    display: block;
+}
+
+.subMenu .item {
+    padding-top: 10px;
+    width: 185px;
+}
+
+.subMenu .item ul li {
+    padding: 3px 0;
+}
+
+.subMenu .item ul li a {
+    text-decoration: none;
+    color: #757575;
+    font-size: 13px;
+}
+
+.subMenu .item ul li a:hover {
+    color: #111;
+}
+
+
+#mainHome {
+    
+}
+
+.dTDs_QsT {
+    /* margin-top: 60px; */
+    height: 48px;
+    background: whitesmoke;
+}
+
+#mainHome .dTDs_QsT ul {
+    list-style-type: none;
+}
+
+.dTDs_QsT ul li {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dTDs_QsT>ul li h5 {
+    margin: 0;
+}
+
+.dTDs_QsT ul li p:not(.dTDs_QsT ul li a) {
+    font-size: 12px;
+    color: #373737;
+}
+
+.dTDs_QsT ul li a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: revert;
+}
+
+.home-banner-video {
+    margin: 0 auto 32px;
+    padding: 0 48px;
+}
+
+/* xử lý thuộc tính video  */
+.custom-video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+.custom-video::-webkit-media-controls-play-button {
+    display: none !important;
+}
+.custom-video::-webkit-media-controls-time-remaining-display {
+    display: none !important;
+}
+
+.sloganHome {
+    text-align: center;
+}
+
+.sloganHome a {
+    text-decoration: none;
+}
+
+.sloganHome h1 {
+    font-size: 58px;
+    color: #000;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 0.8;
+    letter-spacing: -3px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sloganHome p {
+    width: 500px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 26px 12px;
+    color: #373737;
+}
+
+.sloganHome span {
+    color: #000;
+    margin: 0;
+    padding: 4px;
+}
+
+
+.sloganHome button {
+    margin: 0 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background: #000;
+}
+
+.sloganHome a:hover {
+    text-decoration: none;
+}
+
+.sloganHome button:hover {
+    opacity: 0.6;
+}
+
+
+.carousel  {
+margin-top: 84px;
+width: 100%;
+}
+
+.carousel-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 12px;
+    padding: 0 48px;
+    align-items: center;
+}
+
+.carousel .carousel-header-wrapper .carousel-txt {
+    margin: 0;
+}
+
+.carousel .carousel-header-wrapper 
+.carousel-txt-right {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 165px;
+}
+
+.carousel .carousel-header-wrapper 
+.carousel-txt-right a{
+    text-decoration: none;
+    color: #000;
+}
+
+.carousel .carousel-header-wrapper 
+.carousel-txt-right a:hover {
+    opacity: 0.5;
+}
+
+.carousel-txt {
+
+}
+
+.carousel  .list-items {
+    list-style-type: none;
+}
+
+.carousel  .list-items li {
+    max-width: 440px;
+    padding-left: 16px;
+}
+
+.carousel  .list-items li img {
+    max-width: 440px;
+    width: 100%;
+}
+
+.carousel .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    padding: 32px 0;
+}
+
+.carousel  .content>p {
+    text-decoration: none;
+}
+
+.carousel  .content>span {
+    color: #757575;
+}
+
+.carousel  .price {
+    padding-right: 20px;
+    outline: none;
+}
+
+.carousel a:hover,
+.carousel a:focus {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+    outline-offset: hide;
+}
+
+/* Tp. Bị chỉnh sữa trong framework slick slider*/
+.slider-products .slick-prev:before,
+.slider-products .slick-next:before {
+    color: #111 !important;
+}
+
+.carousel .slick-slider {
+    position: unset;
+}
+
+.slider-products .slick-prev
+{
+    top: 28px;
+    left: 90% !important;
+    z-index: 10;
+}
+
+.slider-products .slick-next {
+    top: 28px;
+    right: 55px !important; 
+    z-index: 10;
+}
+/* *** */
+
+.home-banner-trending {
+    margin: 84px 48px 0;
+}
+
+.home-banner-trending a img {
+    width: 100%;
+}
+ 
+.home-banner-Video2 {
+    margin: 84px 48px 0;
+}
+
+.home-banner-Video2 a video {
+    width: 100%;
+}
+
+.home-col-4  {
+    margin: 64px 48px 84px;
+    padding: 0;
+}
+
+.home-col-4 .col-lg-4 {
+    padding: 0;
+}
+
+.home-col-4 .row .item {
+    padding: 0 4px;
+    position: relative;
+}
+
+.home-col-4  .item img {
+    width: 100%;
+    height: 450px;
+}
+
+.home-col-4 h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.home-col-4 .item {
+
+} 
+
+.home-col-4 .item  button {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 20px;
+    color: #000;
+}
+
+.home-col-4 .item  button:hover {
+    background-color: #757575;
+}
+
+footer {
+    background: #000;
+    width: 100%;
+    height: 300px;
+}
+
+.container-footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding: 40px 40px 0;
+
+}
+
+.footer-body {
+    width: 100%;
+    min-height: 200px;
+}
+
+footer .accordion-body {
+    display: inline-flex;
+}
+
+footer .accordion-body ul {
+    list-style-type: none;
+    width: 250px;
+}
+
+.footer-body ul li a {
+    color: #757575;
+    text-decoration: none;
+}
+
+
+.footer-body .__col-1 a,
+.footer-body .__col-2 a, 
+.footer-body .__col-3 a {
+    text-decoration: none;
+}
+
+.footer-body .__col-2 , 
+.footer-body .__col-3  {
+    font-size: 12px;
+}
+
+.footer-body .__col-2 li, 
+.footer-body .__col-3 li {
+    height: 28px;
+    margin-bottom: 2px;
+}
+
+.footer-body .__col-2 li :hover, 
+.footer-body .__col-3 li :hover {
+    color: #e7e7e7;
+}
+
+footer .social-links ul {
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer .social-links ul li {
+    margin: 0 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+footer .social-links ul li:hover {
+    background: #fff;
+}
+
+footer .social-links i {
+    font-size: 18px;
+    color: #000 !important;
+    line-height: 30px;
+}
+
+footer .desc-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    align-items: center;
+}
+
+footer .address--CpRight{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+footer .address--CpRight p {
+    margin: 0 10px 0 0;
+    padding: 8px;
+    color: #757575;
+}
+
+
+footer .address--CpRight  a:focus,
+footer .address--CpRight a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.desc-footer--address i._fa-my {
+    margin-right: 10px;
+}
+
+.desc-footer--CpRight p {
+    padding-left: 26px;
+}
+
+.menu-footer li {
+    padding: 8px;
+    font-size: 12px;
+}
+
+ul.menu-footer {
+    display: flex;
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.menu-footer li a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.menu-footer li a:hover  {
+    color: #fff;
+    cursor: pointer;
+}
+
+.desc-footer--address a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* phần gần cuối  */
+.merchMenuWrapper {
+    margin-bottom: 44px;
+}
+.merchMenuWrapper .col-lg-2 .item ul {
+    list-style-type: none;
+}
+
+.merchMenuCol h5 {
+    margin-bottom: 20px;
+}
+
+.merchMenuCol ul li {
+    padding: 8px 0 ;
+}
+
+.merchMenuCol ul li a {
+    color: #757575;
+    text-decoration: none;
+}
+.merchMenuCol ul li a:hover {
+    color: #111;
+}
+
+/* a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+} */
+
+.login-wrapper {
+    max-width: 380px;
+    min-height: 400px;
+    padding: 28px 28px 68px;
+    background-color: #fff;
+    color: #8d8d8d;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin: 60px auto 0;
+    text-align: center;
+}
+
+.login-wrapper img {
+    height: 17px;
+    display: block;
+    margin: auto;
+}
+
+.loginTxt-header p{
+    padding: 32px 0 27px;
+    text-align: center;
+    font-size: 26px;
+    color: #000;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0;
+}
+
+.login-input input:not(.login-ipCheck) {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.login-input .login-ipCheck {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.ip-submit {
+    background: #000;
+    margin-bottom: 20px;
+}
+
+.desc-sign {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.desc-sign label {
+    margin-left: 12px;
+    margin-right: 50px;
+}
+
+.login-input p,
+.desc-sign label,
+.desc-sign a
+ {
+    font-size: 12px;
+    color: #8d8d8d;
+}
+
+.terms { margin: 20px 0;}
+.terms a {
+    text-decoration: underline;
+    color: #757575;
+}

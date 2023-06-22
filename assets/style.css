@@ -17,18 +17,29 @@ html {
 
 .c-757575 {color: #757575;}
 .c-fff {color: #fff !important;}
+.c-dddd {color: #dddd;}
 .c-000 {color: #000 !important;}
+.c-111111 {color: #111111 !important;}
+.bg-c-000 {background-color: #000; }
 
-.pb-32 {padding-bottom: 32px;}
+/* .pb-32 {padding-bottom: 32px;} */
 
 .fl-left {float: left;}
+.fl-right {float: right;}
 
+ul.list-items.slider-products.slick-initialized.slick-slider {
+    margin-left: 32px;
+}
 .tt-upp {text-transform: uppercase;}
 
 .dl-fl-cTer {
     display: flex;
     justify-content: center;
 } 
+.dl-fl-spBet {
+    display: flex;
+    justify-content: space-between;
+}
 
 header {
     max-height: 96px;
@@ -203,6 +214,7 @@ div.pre-desktop-menu ul {
     margin: 0 12px;
     font-size: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .btn-icon-bag-header {
@@ -210,7 +222,8 @@ div.pre-desktop-menu ul {
     height: 35px;
     padding: 6px;
     font-size: 20px;
-    text-align: center;
+    text-align: center; 
+    cursor: pointer;
 }
 
 .btn-icon-bag-header:hover,
@@ -218,6 +231,9 @@ div.pre-desktop-menu ul {
     background: #e5e5e5;
     border-radius: 50%;
 }
+.btn-icon-bag-header a{color: #111111;}
+.btn-icon-bag-header a:hover{color: #111111;}
+
 
 .subMenu {
     display: none;
@@ -289,7 +305,7 @@ div.pre-desktop-menu ul {
 }
 
 .home-banner-video {
-    margin: 0 auto 32px;
+    /* margin: 0 auto 32px; */
     padding: 0 48px;
 }
 
@@ -306,6 +322,7 @@ div.pre-desktop-menu ul {
 
 .sloganHome {
     text-align: center;
+    padding-top: 36px;
 }
 
 .sloganHome a {
@@ -323,7 +340,7 @@ div.pre-desktop-menu ul {
 }
 
 .sloganHome p {
-    width: 500px;
+    /* width: 500px; */
     line-height: 1.5;
     margin: 0 auto;
     padding: 26px 12px;
@@ -488,13 +505,15 @@ width: 100%;
 }
 
 .home-col-4 .row .item {
+    width: 100%;
     padding: 0 4px;
     position: relative;
 }
 
 .home-col-4  .item img {
     width: 100%;
-    height: 450px;
+    height: 540px;
+    object-fit: cover;
 }
 
 .home-col-4 h3 {
@@ -523,7 +542,7 @@ width: 100%;
 footer {
     background: #000;
     width: 100%;
-    height: 300px;
+    min-height: 300px;
 }
 
 .container-footer {
@@ -545,7 +564,8 @@ footer .accordion-body {
 
 footer .accordion-body ul {
     list-style-type: none;
-    width: 250px;
+    max-width: 250px;
+    padding-right: 16px;
 }
 
 .footer-body ul li a {

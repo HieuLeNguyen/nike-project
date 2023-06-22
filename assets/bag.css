@@ -1,0 +1,123 @@
+.wrapper-mw1100 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.wrapper-mw1100>div {
+    display: inline-flex;
+    width: 100%;
+}
+
+.col-left-70 {
+    width: 70%;
+    padding: 0 8px;
+}
+
+.Notification--js {
+    max-width: 100%;
+    height: 62px;
+    box-shadow: rgb(229, 229, 229) 0px -1px 0px 0px inset;
+    background: rgb(247, 247, 247);
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 12px 24px;
+    align-items: center;
+    border: none;
+}
+
+.Notification--js h5, .Notification--js p {margin: 0;}
+.Notification--js h5 {
+    font-size: 14px;
+}
+.Notification--js p{
+    font-size: 12px;
+    color: #757575;
+}
+.Notification--js p>a {
+    text-decoration: underline;
+}
+.btn-close--notification:hover {
+    cursor: pointer;
+    color: #ccc;
+}
+.inf-prdtl-bag {}
+.container-prdt-bag {
+    display: inline-flex;
+    padding: 24px 0;
+    border-bottom: 1px solid #ccc;
+}
+.container-prdt-bag img {
+    border-radius: 4px;
+}
+.content-infPrdtMain {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    max-width: 600px;
+    width: 600px;
+}
+.content-infPrdtMain .prdt-slider-price {
+    padding-left: 40px;
+}
+.content-infPrdtMain div ul {
+    display: inline-flex;
+}
+.content-infPrdtMain div ul li:first-child {
+    padding-right: 10px;
+}
+.favourites {
+    padding-top: 100px;
+}
+.favourites a {
+    text-decoration: underline;
+}
+.favourites a:hover {
+    color: black;
+    text-decoration: underline !important;
+}
+.btn-icon-b {margin-top: 24px;}
+.btn-icon-b i {
+    font-size: 22px;
+    color: #757575;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+.fa--question {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    color: black;
+}
+.fa--ml-12 {
+    margin-left: 12px;
+}
+
+
+
+
+
+
+
+.col-right-30 {
+    width: 30%;
+    padding: 0 8px;
+
+}
+.col-right-30 h4 {
+    margin-bottom: 24px;
+}
+.col-right-30 ul {margin-bottom: 32px;}
+.col-right-30 ul li {
+    padding-bottom: 10px;
+    color: #565555;
+}
+.col-right-30 ul li:last-child {
+    margin: 12px 0;
+    padding: 16px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
